@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
-  # Set the root path to serve the documentation
   root 'home#index'
 
-  # Keep other routes as is
   resources :submissions, only: [:index, :show, :create, :destroy], param: :token do
     post 'batch', to: 'submissions#batch_create', on: :collection
     get 'batch', to: 'submissions#batch_show', on: :collection
@@ -26,7 +24,4 @@ Rails.application.routes.draw do
   post 'authorize', to: 'sessions#authorize'
 
   get 'workers', to: 'health#workers'
-
-  # Add a new route for Hello World
-  get 'hello', to: 'application#hello_world'
 end
