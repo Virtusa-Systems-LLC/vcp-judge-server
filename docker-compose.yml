@@ -25,13 +25,13 @@ services:
     <<: *default-logging
     restart: always
 
-  db:
-    image: postgres:16.2
-    env_file: judge0.conf
-    volumes:
-      - data:/var/lib/postgresql/data/
-    <<: *default-logging
-    restart: always
+  #db:
+  #  image: postgres:16.2
+  #  env_file: judge0.conf
+  #  volumes:
+  #    - data:/var/lib/postgresql/data/
+  #  <<: *default-logging
+  #  restart: always
 
   redis:
     image: redis:7.2.4
