@@ -372,6 +372,6 @@
   source_file: "Main.java",
   compile_cmd: "/usr/local/openjdk21/bin/javac %s Main.java",
   run_cmd: "/usr/local/openjdk21/bin/java Main"
-  }
+  },
 
 ]
