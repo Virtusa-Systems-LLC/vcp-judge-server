@@ -14,13 +14,17 @@
  #   )
  # end
 #end
-@languages = []
+
+
+languages = []
 
 require_relative 'languages/archived'
 require_relative 'languages/active'
 
+languages = @languages
+
 ActiveRecord::Base.transaction do
-  @languages.each do |language|
+  languages.each do |language|
     Language.find_or_initialize_by(id: language[:id]).tap do |l|
       l.name = language[:name]
       l.is_archived = language[:is_archived]
