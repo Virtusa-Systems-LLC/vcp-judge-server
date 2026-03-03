@@ -14,6 +14,7 @@
  #   )
  # end
 #end
+@languages = []
 
 require_relative 'languages/archived'
 require_relative 'languages/active'
