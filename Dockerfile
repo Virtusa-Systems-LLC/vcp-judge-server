@@ -43,7 +43,7 @@ RUN useradd -u 1000 -m -r judge0 && \
     chown judge0: /api/tmp/
 
 USER judge0
-
+RUN mkdir -p /api/log && chmod -R 775 /api/log
 ENV JUDGE0_VERSION "1.13.1"
 LABEL version=$JUDGE0_VERSION
 
