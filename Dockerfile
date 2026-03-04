@@ -1,4 +1,4 @@
-FROM judge0/compilers:latest AS production
+FROM public.ecr.aws/f3w3c5y2/vcp-public:judge-compiler AS production
 
 ENV JUDGE0_HOMEPAGE "https://judge0.com"
 LABEL homepage=$JUDGE0_HOMEPAGE
