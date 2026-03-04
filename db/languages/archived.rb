@@ -320,5 +320,21 @@
     source_file: "main.rs",
     compile_cmd: "/usr/local/rust-1.20.0/bin/rustc %s main.rs",
     run_cmd: "./main"
+  },
+  {
+    id: 90,
+    name: "Java (OpenJDK 17)",
+    is_archived: false,
+    source_file: "Main.java",
+    compile_cmd: "/usr/local/openjdk17/bin/javac %s Main.java",
+    run_cmd: "/usr/local/openjdk17/bin/java Main"
+  },
+  {
+    id: 91,
+    name: "Java (OpenJDK 21)",
+    is_archived: false,
+    source_file: "Main.java",
+    compile_cmd: "/usr/local/openjdk21/bin/javac %s Main.java",
+    run_cmd: "/usr/local/openjdk21/bin/java Main"
   }
 ]
